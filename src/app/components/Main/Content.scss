@@ -1,6 +1,7 @@
 main {
     text-align: center;
     width: 100%;
+
 }
 
 .description {
@@ -16,10 +17,39 @@ main {
 
     p {
         font-size: 1.6em;
-        color: white;
+      
         padding: 10px;
         border-radius: 5px ;
         width: 20%;
-        background-color: #384756;
+    }
+
+
+}
+
+.activities-list{
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    background-color: #384756;
+
+    &>article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        color: #C8AD55;
+        border: 2px solid #C8AD55;
+        border-radius: 8px;
+        min-height: 300px ;
+        min-width: 411px;
+
+        h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
     }
 }
