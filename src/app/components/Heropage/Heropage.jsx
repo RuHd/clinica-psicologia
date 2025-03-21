@@ -1,18 +1,16 @@
 import React from 'react'
 import './Heropage.scss'
-import Image from 'next/image'
-import symbol from '../../../../public/symbol.png' 
 
 const Heropage = () => {
   return (
     <div className='Heropage'>
         <section>
-            <Image
-              src={symbol}
-              width={250}
-            />
+          <h1>Clinica de Psicologia</h1>  
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet accusamus nesciunt voluptate. Minima incidunt vitae explicabo numquam nihil. Dicta maxime tenetur, pariatur commodi ad quidem aliquid omnis delectus rem quibusdam.
+          </p>
+          <button>Saiba Mais</button>
         </section>
-        <h1>Clinica de Psicologia</h1>
     </div>
   )
 }

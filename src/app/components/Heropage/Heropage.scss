@@ -1,0 +1,88 @@
+.Heropage {
+    position: relative;
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+    
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url("../../../../public/heropageIMG.png");   
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        filter: brightness(.5);
+        -webkit-filter: brightness(.5);
+        animation-name: zoomin;
+        animation-duration: 200s;
+        animation-iteration-count: infinite;
+        
+
+       
+     
+    }
+
+    section {
+        width: 30%;
+        scale: 1.2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 13px;
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translateX(-50%);
+        color: white;
+        z-index: 10;
+        animation-name: popsup;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in;
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        button {
+            background-color: white;
+            padding: 7px;
+            border-radius: 5px;
+            width: fit-content;
+            transition: .5s;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+
+@keyframes zoomin {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 2;
+    }
+}
+
+@keyframes popsup {
+    0%{
+        transform: translateX(-45%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+}
