@@ -3,6 +3,11 @@ import './Header.scss'
 import { FaFacebook, FaInstagramSquare, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa'
 
 const Header = () => {
+
+  const scrollPage = () => {
+    window.scrollTo(0, window.screen.availHeight * .8)
+    console.log(window)
+  }
   return (
     <header>
         <h1>Psych</h1>
@@ -22,7 +27,7 @@ const Header = () => {
         </nav>
         <nav>
             <button>Home</button>
-            <button>Sobre Nós</button>
+            <button onClick={() => scrollPage()}>Sobre Nós</button>
         </nav>
     </header>
   )

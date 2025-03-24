@@ -1,28 +1,40 @@
 main {
     text-align: center;
     width: 100%;
-
 }
 
 .description {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 500px;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        h2 {
+            
+            font-size: 3em;
+        }
     
-    h2 {
-        font-size: 2.5em;
+        p {
+            font-size: 1.6em;
+          
+            padding: 10px;
+            border-radius: 5px ;
+            width: 100%;
+        }
     }
-
-    p {
-        font-size: 1.6em;
-      
-        padding: 10px;
-        border-radius: 5px ;
-        width: 20%;
+    
+    .clinic-img {
+        object-fit: cover;
+        height: 80%;
+        width: 50%;
+        border-radius: 50%;
     }
-
 
 }
 
