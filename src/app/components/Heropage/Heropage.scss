@@ -3,29 +3,38 @@
     height: 60%;
     width: 100%;
     overflow: hidden;
-    
 
-    &::after {
-        content: "";
-        position: absolute;
+    .heropage-images {
+        position: relative;
+        overflow: hidden;
         width: 100%;
         height: 100%;
-        top: 0;
-        left: 0;
-        background-image: url("../../../../public/heropageIMG.png");   
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
-        filter: brightness(.5);
-        -webkit-filter: brightness(.5);
-        animation-name: zoomin;
-        animation-duration: 200s;
-        animation-iteration-count: infinite;
         
+        &::after {
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 4;
+            filter: opacity(.5)
+        }
 
-       
-     
+
+        &>* {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 1s;
+            animation-name: zoomin;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
     }
 
     section {
@@ -71,7 +80,7 @@
     }
 
     100% {
-        scale: 2;
+        scale: 1.2;
     }
 }
 

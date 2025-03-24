@@ -19,6 +19,23 @@ header {
     align-items: center;
    }
 
+   .social-medias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+
+    button {
+        color: white;
+        transition: .5s;
+
+        &:hover {
+            opacity: .4;
+        }
+    }
+}
+
    button {
     height: 100%;
     font-size: 1.2em;

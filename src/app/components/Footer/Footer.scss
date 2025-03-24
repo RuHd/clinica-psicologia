@@ -7,24 +7,8 @@ footer {
     color: white;
     background-color: #385656;
 
-    nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        
-
-        button {
-            color: white;
-            transition: .5s;
-
-            &:hover {
-                opacity: .4;
-            }
-        }
-    }
-
     p {
+        font-size: 1em;
         padding: 7px;
         text-align: center;
         width: 100%;
