@@ -13,7 +13,6 @@ const Heropage = () => {
 
    const interval = setInterval(() => {
           setcurrentImg(prev => prev + 1 > 3 ? 1 : prev + 1)
-          console.log(currentImg)
     }, 20000)
   
     return () => {

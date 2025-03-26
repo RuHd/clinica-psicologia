@@ -95,3 +95,29 @@
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 560px) {
+    .Heropage {
+        section {
+        
+            text-align: center;
+            top: 0;
+            width: 100%;
+            scale: 1;
+
+            h1 {
+                scale: 1;
+            }
+
+            p {
+                padding: 0 5px;
+                width: auto;
+                height: auto;
+            }
+
+            button {
+                align-self: center;
+            }
+        }
+    }
+}

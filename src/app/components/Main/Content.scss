@@ -4,10 +4,12 @@ main {
 }
 
 .description {
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
     align-items: center;
-    height: 500px;
+  
 
     section {
         display: flex;
@@ -31,8 +33,8 @@ main {
     
     .clinic-img {
         object-fit: cover;
-        height: 80%;
-        width: 50%;
+        height: 300px;
+        width: 350px;
         border-radius: 50%;
     }
 
@@ -43,6 +45,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     background-color: #384756;
 
@@ -56,12 +59,23 @@ main {
         border: 2px solid #C8AD55;
         border-radius: 8px;
         min-height: 300px ;
-        min-width: 411px;
+        max-width: 411px;
 
         h3 {
             font-size: 1.5em;
             font-weight: bold;
             letter-spacing: 5px;
         }
+
+        p {
+            padding: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .activities-list {
+        justify-content: center;
+        align-items: center;
     }
 }
