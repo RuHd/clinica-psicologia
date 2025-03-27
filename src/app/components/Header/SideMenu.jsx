@@ -9,8 +9,8 @@ const SideMenu = ({scrollPage, setmenuClicked}) => {
     }
   return (
     <nav className='sidemenu'>
-        <button onClick={() => setmenuClicked(prev => !prev)}>X</button>
-        <section>
+        <button onClick={() => setmenuClicked(prev => !prev)} className='close-btn'>X</button>
+        <section className='menu-options'>
             <button>Home</button>
             <button onClick={() => scrollPage()}>Sobre Nós</button>
         </section>

@@ -63,27 +63,71 @@ header {
         .sidemenu {
             text-align: center;
             position: fixed;
-            top: 0px;
+            top: 30%;
             right: 0;
             display: flex;
             flex-direction: column;
+            border-radius: 10px;
             align-items: center;
-            justify-content: space-between;
             background-color: black;
             color: white;
             z-index: 100;
-            width: 150px;
-            height: 100vh;
-            transition: transform 1s;
+            min-width: 150px;
+            height: 30vh;
+            animation-name: slideLeft;
+            animation-duration: .5s;
+            animation-fill-mode: both;
 
-            &>button {
-                width: auto;
-                height: auto;
+            .close-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                background-color: white;
+                color: black;
+                border-radius: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -15px;
+                width: 30px;
+                height: 30px;
+            }
+
+            .menu-options {
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                // transform: translateY(50%);
+
+                * {
+                    width: auto;
+                    height: fit-content;
+                }
             }
         }
 
         .social-medias {
-            flex-direction: column;
+            border-top: 2px solid white;
+            scale: .8;
+            justify-content: center;
+
+            & button:hover {
+                background-color: black;
+                opacity: .5;
+            }
         }
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(200px);
+    }
+
+    100% {
+        transform: translateX(0px);
     }
 }
